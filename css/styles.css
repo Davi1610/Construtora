@@ -1,0 +1,276 @@
+/*    font-family: 'Anton', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'STIX Two Text', serif;   */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  flex: 1;
+  background: linear-gradient(to right, #000000, #434343);
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+}
+header h1 {
+  padding-left: 200px;
+  padding-top: 40px;
+}
+header nav {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 40px;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  background-color: #eee;
+  display: inline-block;
+  padding: 20px 50px;
+  /* Mudança de cor quando passa o mouse (tempo)*/
+  transition: ease 0.5s;
+}
+header nav ul li a {
+  color: #242424;
+  text-decoration: none;
+  font-size: 15pt;
+  text-transform: capitalize;
+}
+/* Comando que fará com que mude a cor da caixa quando passar o mouse */
+header nav ul li:hover {
+  background-color: #111010;
+}
+/* comando que fará com que mude a cor da letra quando passar o mouse em cima */
+header nav ul li:hover > a {
+  color: rgb(204, 204, 204);
+}
+footer {
+  flex: 1;
+  /* torna os elementos flexiveis */
+  display: flex;
+  /* coloca um elemento ao lado do outro */
+  flex-direction: row;
+  background-color: rgb(0, 0, 14);
+  font-family: "STIX Two Text", serif;
+  font-size: 10pt;
+  padding: 50px;
+  color: white;
+}
+footer #redes,
+footer #end {
+  flex: 1;
+  color: #fff;
+}
+footer #end {
+  text-align: right;
+  padding-right: 50px;
+}
+footer #redes ul {
+  list-style: none;
+}
+footer #redes ul li {
+  display: inline-block;
+}
+footer #redes ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+footer #redes ul li a i {
+  font-size: 30px;
+  color: #fff;
+  margin: 10px;
+}
+main #faixahome1 {
+  padding: 50px 100px;
+  background-color: #969493;
+}
+main #faixahome1 h2 {
+  font-family: "Anton", sans-serif;
+  margin: 20px;
+}
+main #faixahome1 div {
+  font-family: "Verdana";
+  padding-left: 100px;
+  padding-right: 100px;
+  line-height: 20px;
+  text-align: justify;
+  color: rgb(226, 224, 224);
+}
+main #faixahome2 {
+  background-color: #969493;
+  padding: 100px;
+  margin: 400px 0px;
+}
+main #faixahome2 h2 {
+  font-family: "Anton", sans-serif;
+  margin: 40px;
+  text-align: center;
+  font-size: 30pt;
+}
+main #faixahome2 #clientes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main #faixahome2 #clientes div {
+  flex: 1;
+  margin: 10px;
+}
+main #faixahome3 {
+  background-color: #969493;
+  padding-top: 100px;
+}
+main #faixahome3 h2 {
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  font-size: 30pt;
+}
+main #faixahome3 div iframe {
+  width: 100%;
+  height: 500px;
+}
+/* CSS DA PÁGINA PROJETOS */
+main #construcao h3,
+main #casaref h3,
+main #interno h3 {
+  background-color: #111010;
+  font-family: "Verdana";
+  font-size: 35pt;
+  font-weight: lighter;
+  text-align: center;
+  padding: 50px 0px;
+  color: rgb(226, 224, 224);
+}
+main #construcao h2,
+main #casaref h2,
+main #interno h2 {
+  background-color: #111010;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 40pt;
+  text-align: center;
+  padding: 60px;
+  color: rgb(226, 224, 224);
+}
+main #construcao div {
+  background-color: #111010;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+main #construcao {
+  background-color: #969493;
+}
+main #construcao div img {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 32%;
+  height: auto;
+  opacity: 0.8;
+  cursor: pointer;
+  -webkit-transition: ease 0.5s;
+  -o-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+main #construcao div img:hover {
+  opacity: 1;
+}
+main #casaref {
+  background-color: #969493;
+}
+main #casaref #conteudo {
+  display: flex;
+  flex-direction: row;
+}
+main #casaref #destaque {
+  width: 40%;
+}
+main #casaref #destaque img {
+  width: 100%;
+  margin: 5;
+}
+main #casaref #miniatura {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main #interno div {
+  display: flex;
+  background-color: #111010;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main #interno div img {
+  flex: 1;
+  width: 40%;
+  height: auto;
+  margin: 5px;
+  /* efeito de inclinação */
+  transform: skewX(10deg);
+  cursor: pointer;
+  transition: ease 0.5s;
+}
+main #interno div img:hover {
+  transform: scale(1.2);
+  transform: skewX(0deg);
+  /* Fazer a imagem sobre as outras */
+  z-index: 1000;
+}
+/*  FIM DA PÁGINA PROJETOS */
+
+/* INICIO DA FORMATAÇÃO DA PÁGINA CONTATO */
+form {
+  padding: 100px;
+  border: #fff;
+  width: 500px;
+  background-color: #fff;
+
+  /* Para alinhar o formulário ao centro é só 
+      utlizar o comando margin-left como auto e o comando
+      margin-right como auto */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+/* Vamos fazer a formatação dos elementos do formulário
+    capturando todos os seus respectivos tipos, veja abaixo:*/
+input[type="text"],
+input[type="email"],
+form span,
+textarea {
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Arial";
+  font-size: 10pt;
+}
+select {
+  margin: 5px;
+}
+textarea {
+  height: 200px;
+}
+input[type="submit"] {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(8, 49, 18);
+  border-radius: 50%;
+  color: white;
+  display: block;
+}
