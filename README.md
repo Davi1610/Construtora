@@ -1,6 +1,6 @@
 PEQUENO PROJETO DO CURSO TÉCNICO DE INFORMÁTICA 
 
-Projeto desenvolvido com HTML e CSS;
+Projeto desenvolvido com HTML e CSS; <br>
 Site fictício de uma construtora para oferecimento de serviços;
 Site desenvolvido apenas para portfólio e estudo de HTML e CSS;
 
